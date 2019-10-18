@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/8cb99a8cd7.js" crossorigin="anonymous"></script>
+	<title>Quiz Syhus</title>
+</head>
+
+<body>
+	<!--###Div Fixa da esquerda###-->
+	<div class="row h-100">
+
+		<div class="col-xl left">
+			<div class="syhus-container col-sm-8 col-10">
+				<img src="img\logo-syhus-01.png" class="img-fluid logo">
+				<h2>Faça um ótimo <b>pitch</b> e conquiste o seu <b>investidor</b></h2>
+				<p>Faça o nosso quiz agora e descubra no final se você está realmente pronto para venncer um pitch e conquistar o seu investidor</p>
+				<a href="https://www.facebook.com/syhus.com.br/"><i class="fab fa-facebook-square fa-2x"></i></a> <a href="https://www.instagram.com/syhuscontabilidade/"><i class="fab fa-instagram fa-2x"></i></a> <a href="https://pt.linkedin.com/company/syhus-intelig%C3%AAncia-financeira"><i class="fab fa-linkedin-in fa-2x"></i></a>
+				<p>Syhus Contabilidade 2019 © Todos os direitos reservados</p>
+			</div>
+		</div>
+		
+		<!--###Div Direita###-->
+		<div class="col-xl right">
+			<!--###Quiz###-->
+			<div id="quizContainer" class="quiz-container col-sm-8 col-10">
+				<div id="pergunta" class="pergunta"></div>
+				<label class="option"><input type="radio" name="option" value="1"/><span id="opt1"></span></label>
+				<label class="option"><input type="radio" name="option" value="2"/><span id="opt2"></span></label>
+				<label class="option"><input type="radio" name="option" value="3"/><span id="opt3"></span></label>
+				<label class="option"><input type="radio" name="option" value="4"/><span id="opt4"></span></label>
+				<div class="alert alert-warning" id="aviso" style="display: none;">
+					Escolha uma opção
+				</div>
+				<button id="nextButton" class="btn btn-default" name="enviar" onclick="proximaPergunta();">Próxima Questão</button>
+			</div>
+			<!--###Resultado###-->
+			<div id="resultado" class="resultado col-sm-8 col-10" style="display: none">
+				<p class="topo-resultado col-3">Resultado</p>
+				<h2 class="form-h2" id="titulo-resultado"></h2>
+				<p class="conteudo-resultado" id="mostrar-resultado"></p>
+			</div>
+		</div>
+
+		<!--###Fim da Row###-->
+	</div>
+
+	<script src="js\question.js"></script>
+	<script src="js\quiz-script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script> 
+</body>
+</html>
